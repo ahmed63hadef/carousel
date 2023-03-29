@@ -37,8 +37,35 @@ const imageOnView = document.querySelector(".imagePrincipal");
 let numberSlide = slides.length;
 let i = 0;
 
+function showDots() {
+  const dots = document.querySelector(".dots");
+  for (let a = 0; a < numberSlide; a++) {
+    const dot = document.querySelector(".dot");
+    dot.id = "span" + a;
+    dot.addEventListener("click", function (event) {
+      i = Number(event.target.id.replace("span", ""));
+      showSlide();
+    });
+    dots.appendChild(dot);
+    if (a == 0) {
+      dots.children[a].classList.add("dot_selected");
+    }
+  }
+}
+
+showDots();
+
+function selected() {
+  const dot = document.getElementsByClassName("dot");
+  for (let i = 0; i < dot.length; i++) {
+    dot[i].classList.remove("dot_selected");
+  }
+  dot[i].classList.add("dot_selected");
+}
+
 function showSlide() {
   imageOnView.src = `./images/${slides[i].image}`;
+  selected();
 }
 showSlide();
 
@@ -76,7 +103,7 @@ function startTimeout() {
     }
     showSlide();
     startTimeout();
-  }, 5000);
+  }, 9000);
 }
 
 startTimeout();
