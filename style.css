@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(2, 0, 36, 0.6153054971988796) 20%
+  );
+}
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin: 50px auto;
+}
+
+img {
+  height: 600px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.carousel {
+  display: flex;
+}
+.carousel img {
+  border: 2px solid whitesmoke;
+  border-radius: 20px;
+  max-height: 80%;
+}
+
+.arrow {
+  display: flex;
+  margin-top: 50px;
+  gap: 200px;
+  position: absolute;
+  top: 800px;
+}
+.arrow_left,
+.arrow_right {
+  cursor: pointer;
+  padding: 20px 80px;
+  border-radius: 50px;
+  background-color: black;
+  font-size: 3em;
+  border: 2px solid whitesmoke;
+  color: white;
+}
