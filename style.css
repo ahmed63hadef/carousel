@@ -3,21 +3,19 @@ body {
   padding: 0;
   height: 100vh;
   overflow: hidden;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(2, 0, 36, 0.6153054971988796) 20%
-  );
+  background: rgba(0, 0, 0, 0.587);
 }
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
-  margin: 50px auto;
+  margin: 15px auto;
 }
-
+p {
+  position: relative;
+  font-weight: 900;
+}
 img {
   height: 600px;
 }
@@ -27,8 +25,16 @@ img {
   align-items: center;
   position: relative;
 }
+.p2 {
+  position: relative;
+  top: 660px;
+  font-weight: 400;
+  padding: 0 30px;
+}
 .carousel {
   display: flex;
+  position: relative;
+  top: -60px;
 }
 .carousel img {
   border: 2px ridge whitesmoke;
@@ -39,12 +45,15 @@ img {
 
 .dots {
   position: absolute;
-  bottom: -85px;
+  top: 880px;
+  margin-top: 50px;
   display: flex;
   cursor: pointer;
+  z-index: 10;
 }
 .dot {
   margin-inline: 5px;
+
   width: 13px;
   height: 13px;
   background-color: #ffffff00;
@@ -59,14 +68,14 @@ img {
 .arrow {
   display: flex;
   margin-top: 50px;
-  gap: 200px;
+  gap: 900px;
   position: absolute;
-  top: 800px;
+  top: 850px;
 }
 .arrow_left,
 .arrow_right {
   cursor: pointer;
-  padding: 20px 80px;
+  padding: 10px 20px;
   border-radius: 50px;
   background-color: black;
   font-size: 2em;
