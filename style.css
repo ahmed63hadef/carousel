@@ -3,7 +3,7 @@ body {
   padding: 0;
   height: 100vh;
   overflow: hidden;
-  background: rgba(0, 0, 0, 0.587);
+  background: #9eb7e5;
 }
 h1 {
   display: flex;
@@ -39,7 +39,7 @@ img {
 .carousel img {
   border: 2px ridge whitesmoke;
 
-  border-radius: 20px;
+  border-radius: 10px;
   max-height: 80%;
 }
 

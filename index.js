@@ -130,7 +130,6 @@ arrowLeft.addEventListener("click", function () {
   startTimeout();
 });
 
-// boucle infinie au temps //
 let timeoutId;
 
 function startTimeout() {
